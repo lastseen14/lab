@@ -79,3 +79,7 @@ ssh localhost
 nano hosts
 
 ansible all -i hosts -m ping
+
+10th
+mvn archetype:generate -DgroupId=com.dineshonjava -DartifactId=Javateam -
+DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
