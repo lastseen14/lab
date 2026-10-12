@@ -1,0 +1,29 @@
+a
+void setup() {
+  Serial.begin(9600);
+  pinMode(36, INPUT);
+}
+
+void loop() {
+  int val;
+  val = analogRead(36);
+  Serial.println(val);
+}
+
+b
+void setup() {
+  Serial.begin(9600);
+  pinMode(36, INPUT);
+  pinMode(2, OUTPUT);
+}
+
+void loop() {
+  int val;
+  val = analogRead(36);
+  Serial.println(val);
+
+  if (val < 500)
+    digitalWrite(2, HIGH);
+  else
+    digitalWrite(2, LOW);
+}
